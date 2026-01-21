@@ -64,3 +64,12 @@ The resistor connected to the anode of the LED
 The LED’s cathode connected to GND
 
 The Elegoo R3 powered via USB
+
+Learning points:
+
+When starting the next project with the same microcontroller I noticed that when using pin 8 which was the only pin other than GND. The LED wired to pin 8 was continuing to perform the same action as initially programmed on this project. After a little research I discovered this was leftover logic which stays on the microcontroller until you reset the logic on the pins. My solution was using a script that reset all the leftover logic on all pins on the microcontroller.
+The script is now stored in the Microcontroller-Utliity repo to be utilised in further projects and will use this script on the microcontroller once I am finished with each project.
+
+TO DO!:
+
+Create electrical Schimatic on KiCad!
